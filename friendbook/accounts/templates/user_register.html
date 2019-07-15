@@ -1,0 +1,16 @@
+{% extends 'index.html'%}
+
+
+{% block main%}
+<div class="regbox">
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form }}
+        </div>
+        <button type="submit" class="btn btn-success">Register</button>
+
+
+    </form>
+</div>
+{% endblock%}
