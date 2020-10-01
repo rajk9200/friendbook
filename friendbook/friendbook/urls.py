@@ -28,4 +28,4 @@ urlpatterns = [
     path('', index),
     path('accounts/', include('accounts.urls'))
 
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)#     This is used for static file after adding this we can insert all static files
